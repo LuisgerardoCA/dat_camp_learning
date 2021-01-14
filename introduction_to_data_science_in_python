@@ -26,3 +26,4 @@ plt.hist(female_weight)
 Normalized plot:
 plt.hist(male_weight, density=True)
 plt.hist(female_weight, density=True)
+Esto es un texto extra jijij
