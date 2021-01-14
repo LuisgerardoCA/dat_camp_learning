@@ -1,0 +1,66 @@
+Intermediate Python
+Ticks
+Son la información de la gráfica en y o x
+plt.yticks([0,1,2], ["one","two","three"])
+
+Dictionaries
+Are composed by keys, which have unique information that is correlated one to another, to make a dictionary you should put the information within curly brackets {}
+world = {‘afghanistan’:2.7,  ‘algeria’:4.8, ‘mexico’:120}
+In order to access information in a key, you should ask python with square brackets [ ]
+Keys in a dictionary should be unique
+To add information to a dictionary you should do this:
+world[‘paraguay’] = 4.5
+To update information you should do this:
+world[‘paraguay’] = 4.8
+To delete something form the dictionary
+del(world[‘paraguay’])
+
+Pandas
+2d Numpy array = only one data type
+So for tables with different kind of data we have PANDAS
+It is built on Numpy
+It also works in Data Frames, you can create a data frame starting with a dictionary ¨(keys=column labels; values=data column by column)
+Import pandas as pd
+To create a data frame = pd.DataFrame(dict)
+To change labels at beginning of the table use: data_frame_name.index = [‘one’, ‘two’, ‘three’]
+If you have a lot of information you wont build the data frame manually
+To read a csv: data_frame_name = pd.read_csv(‘path/to/dataframename.csv’)   /or  data_frame_name = pd.read_csv(‘path/to/dataframename.csv’, index_col = 0) so that it wont show a starting column
+To import CSV data into Python as a Pandas DataFrame you can use read_csv().
+In order to select data from one column you should : data_frame_name[[‘name_of_column’]]
+To check what type of info it is: type(data_frame_name[[‘name_of_column’]]
+Row Access : data_frame_name[1:4]
+loc : (label-based) select part of your data based on labels
+iloc : (integer position-based)
+Use it like this:
+data_frame_name.loc[[‘name_of_row’]]
+If you want to choose a row and only a set of columns do this:
+data_frame_name.loc[[‘name_of_row1’, ‘name_of_row2’], [‘name_of_column1’, ‘name_of_column2’]]
+If you want all rows but only a few columns do this:
+data_frame_name.loc[:, [‘name_of_column1’, ‘name_of_column2’]
+To use iloc you should give the information of the position
+data_frame_name.loc [[‘name_of_row1’]]
+data_frame_name.iloc [[‘1’]]
+
+Comparison Operators
+How python values relate
+< less than
+< greater than
+<= less or equal than
+>= greater or equal than
+== equal
+!= not equal
+
+Boolean Operators
+And 
+Or
+Not
+NumPY:  np.logical_and()                  np.logical_or()                       np.logical_not()
+
+Conditional Statements
+If
+Elif
+Else
+
+While Loop: it continues to run the code until the expression is true
+For Loop: 
+
