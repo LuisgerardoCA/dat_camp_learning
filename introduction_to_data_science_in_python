@@ -1,0 +1,28 @@
+Scatter Plot
+plt.scatter (df.variable, df.variable)
+change marker transparency use: alpha (no necesita comillas)
+
+Bar Chart
+plt.bar (df.variable, df.variable)
+plt.barh (df.variable, df.variable) (gráfica horizontal)
+
+Stacked Bar Chart
+Es lo mismo que la de arriba pero necesita de dos argumentos y en el segundo se incluye:
+bottom=df.dog  
+Esto es cierto con la siguientes funciónes
+plt.bar (df.precint, df.dog)
+plt.bar (df.precint, df.dog, bottom=df.dog)
+
+Histogram
+Esta función solo acepta un argumento
+plt.hist(gravel.mass) 
+Python da por default una cantidad de bins, peo s pueden cambiar a través de ‘bins’ bins= 40
+También podemos dar un rango a través de ‘range’ range=(xmin, xmax)
+
+Normalization
+Unnormalized plot:
+plt.hist(male_weight)
+plt.hist(female_weight)
+Normalized plot:
+plt.hist(male_weight, density=True)
+plt.hist(female_weight, density=True)
